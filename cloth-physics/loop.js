@@ -4,12 +4,12 @@ var init = function(){
 };
 
 const accuracy = 4;
-const size = 13;
+const size = 18;
 for(let i = 0; i<size; i++){//width
     for(let j = 0; j<size; j++){//height
         let point = new Point({
-            x:50+i*20,
-            y:50+j*20, 
+            x:50+i*15,
+            y:50+j*15, 
             // oldX:99+i*20,
             // oldY:99+j*20,
             locked:(i===0||i===size-1)&&(j===0/*||j===size-1*/)?true:false,
